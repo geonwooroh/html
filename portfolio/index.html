@@ -1,0 +1,155 @@
+<html>
+    <head>
+    <title>myprofile_dark</title>
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
+    <link rel='stylesheet' href='https://websfont.github.io/scoreDream/scoreDream.css' />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>  
+    </style>
+<body>
+    <!--헤더-->
+        <header>
+            <div class="header_color">
+                <ul class="button_control">
+                    <li><button onclick="Chagecolor(0)"></button></li>
+                    <li><button onclick="Chagecolor(1)"></button></li>
+                    <li><button onclick="Chagecolor(2)"></button></li>
+                    <li><button onclick="Chagecolor(3)"></button></li>
+                </ul>
+            </div>
+            <div class="header_main">
+                <div class="light_and_dark">
+                    <span><button  button type="button" onclick="Change_light(0)"><i data-feather="sun"></i>Light</button></span>
+                    <span><button class="sel" button type="button" onclick="Change_light(1)"><i data-feather="moon"></i>Dark</button></span>
+                </div>    
+                <div class= "my_profile">
+                    <img src="img/my_photo.jpg" width="64px", height="64px"><span class="geonwoo">geonwoo Roh</span>
+                </div>
+            </div>
+        </header>
+     <!--//헤더-->
+     <!--메인-->
+        <main>
+            <div class="main_box">
+                <div class="spare">
+                    <span><strong>개발자 출신 기획자 | Gunpo, Republic of Korea</strong></span>
+                    <ul class="spare_button">
+                        <li><button id="instagram">Instagram</button></li>
+                        <li><button id="linkedln">Linkedln</button></li>
+                        <li><button id="twitter">Twitter</button></li>
+                    </ul>
+                </div>
+                <div class="sub_left">
+                        <h1 id="contact_h1">Contact</h1>
+                        <ul class="contact">
+                            <li> <i data-feather="home"></i><span class="home" onclick="location.href ='index.html'">www.google.com</span></li>
+                            <li> <i data-feather="mail"></i><a class="mail" href="mailto:gwooroh23@gmail.com">gwooroh23@gmail.com</a></li>
+                            <li> <i data-feather="phone"></i><a class="phone" href="tel:010-3655-6338" >(010)-3655-6338</span></a>
+                            <li> <i data-feather="message-square"></i><span class="message_square" onclick="location.href ='leave_a_message.html'">Leave a message</span></li>
+                        </ul>
+                        <h1 id="skill_h1">Skill</h1>
+                        <ul class="skill">
+                            <li class="skill_gray"><span>Tools</span></li>
+                            <li class="adobe"><span >Confluence</span></li>
+                            <li class="sketch"><span >Draw.io</span></li>
+                            <li class="figma"><span >Figma</span></li>
+                            <li class="invision"><span >Jira</span></li>
+                            <li class="skill_gray"><span>Language</span></li>
+                            <li class="html"><span >HTML, CSS, Python, Javascript, SQL</span></li>
+                        </ul>
+                        <h1 id="education_h1">Education</h1>
+                        <ul class="education">
+                            <li><strong>한국공학대학교</strong></li>
+                            <li>소프트웨어전공</li>
+                            <li>2025년 졸업</li>
+                            <li class="education_gray"><span class="seoul">Seoul, Republic of Korea</span></li>
+                        </ul>
+
+                </div>
+                
+                <div class="sub_right">
+                    <h1 id="project_h1">Project</h1>
+                    <p class="bold"><strong>에스티에스-주임</strong></p>
+                    <p class="right_gray">(주)에스티에스 | 2025.01.06 ~ </p>
+                    <p class="content">WBS 작성, Confluence통한 요구사항 명세서 작성, Jira통한 일정 조정 c,c++,mfc통한 코드 구현 및 mmi화면 구성</p>
+                    <P class="bold"><strong>졸업작품 - 리더</strong></P>
+                    <p class="right_gray">한국공학대학교 | 2023.06~ 2024.10.</p>
+                    <p class="content">csv파일 업로드 및 전처리, 로그인, 회원가입 구현, 팀장으로 활동하며 일정관리
+                    </p>
+                    <p class="bold"><strong>현장실습 - jsp</strong></p>
+                    <p class="right_gray"> 2023.08.17 ~ 2023.09.19</p>
+                    <p class="content">- 로그인/ 회원가입 mvc2모델로 구현, 로그아웃 구현, 상세 페이지 alert창과 url 매핑
+                    </p>
+                    <p class="bold"><strong>현장실습 - spring</strong></p>
+                    <p class="right_gray">2023.10.13 ~ 2023.11.02</p>
+                    <p class="content">- 상세 페이지, 메인페이지 ui 디자인, 캘린더 적용하여 구현
+                    </p>
+                </div>
+                
+            </div>
+          
+        </main>
+    <!--//메인-->
+    <!-- 푸터-->
+        <footer>
+            <div class="footer_box">
+            Copyright by roh Corp. All right reserved.
+            </div>
+        </footer>
+     <!-- //푸터-->
+</body>
+        <script>
+            feather.replace();
+            function Chagecolor(index){
+                //각 동그란 버튼의 이름 가져오기
+                var circle = document.getElementsByClassName("circle");
+                //header는 전체 하나에 주는 거니까 하나만 가져오자
+                var header = document.querySelector("header");
+                
+                var contact_h1 = document.getElementById("contact_h1");
+                var skill_h1 = document.getElementById("skill_h1");
+                var education_h1 = document.getElementById("education_h1");
+                var education_h1= document.getElementById("education_h1");
+
+                var instagram = document.getElementById("instagram");
+                var linkedln = document.getElementById("linkedln");
+                var twitter = document.getElementById("twitter");
+                
+
+                
+                //숫자 위에서 지정
+                const color = ['#FF3B30', 'blue', '#34C759', 'black'];
+                for(i=0; i <=4; i++){
+                    if(index === i){
+                    header.style.backgroundColor = color[i];
+
+                    contact_h1.style.color = color[i];
+                    skill_h1.style.color = color[i];
+                    education_h1.style.color = color[i];
+                    project_h1.style.color = color[i];
+                    instagram.style.backgroundColor = color[i];
+                    linkedln.style.backgroundColor = color[i];
+                    twitter.style.backgroundColor = color[i];
+                    
+                }
+                }
+            }
+            function Change_light(index){
+                var main = document.querySelector("main");
+                var body = document.querySelector("body");
+                const color = [' rgba(229, 229, 234, 1)	','rgba(28, 28, 30, 1)','rgba(28, 28, 30, 1)',' rgba(229, 229, 234, 1)'];
+
+                if(index === 0){
+                    // main.style.backgroundColor = color[0];
+                    // main.style.color = color[1];
+                    body.style.backgroundColor = color[0];
+                    body.style.color = color[1];
+                }else if(index === 1){
+                    body.style.backgroundColor = color[2];
+                    body.style.color = color[3];
+                }
+            }
+        </script>
+    </head>
+</html>
