@@ -1,0 +1,56 @@
+  body { font-family: Arial, sans-serif; padding: 10px; }
+    .logo{
+      height: 60px;
+      width: auto;
+      margin-bottom: 6px;
+    }
+    .logo-wrap{
+      display: flex;
+      align-items: flex-start;
+      margin-top: 6px;
+    }
+    .site-title {
+      display: flex;
+      align-items: center;   /* 텍스트 기준 고정 */
+      gap: 12px;
+    }
+    .box { border: 1px solid #cccccc; padding: 50px; margin-bottom: 80px; }
+    .highlight { color: red; font-weight: bold; }
+    .line-up{color:aqua; font-weight: bold;}
+    .menu_item {
+    position: relative; /*여기를 통해 마우스 올렸을 때 아래에 세부 메뉴 띄우기 한다.*/
+}
+
+    .mega_menu{
+         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 30px 50px;
+        gap: 80px;
+        min-width: 300px; /*이게 있어야 글자가 들어갈 공간이 생긴다.*/
+        z-index: 1000;
+    }
+    .top_menu_item{
+      display: flex;
+      gap: 40px;
+    }
+  .column {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      /* background-color: beige; */
+      /* position: absolute;
+      visibility: hidden;
+      opacity: 0; */
+}
+.menu_item:hover .mega_menu {
+  display: flex;
+}
+.menu_item> a {
+  display: inline-block;
+  padding: 10px 16px;
+  white-space: nowrap;
+}
