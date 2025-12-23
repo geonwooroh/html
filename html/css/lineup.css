@@ -1,5 +1,154 @@
+
+/* =========================
+   기본 설정
+========================= */
+body{
+      font-family: "gothic",Arial,sans-serif;
+      background: #f4f4f4;
+      margin :0;
+      padding: 40px 0;
+      color: #000;
+}
+
 .logo{
      height: 60px;
       width: auto;
       margin-bottom: 6px;
+}
+.logo2{
+       height: 60px;
+      width: auto;
+      margin-bottom: 6px;
+}
+
+/* =========================
+   전체 래퍼
+========================= */
+.lineup_table{
+      width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      border: 2px solid #000;
+      padding: 20px 24px;
+}
+/* =========================
+   제목
+========================= */
+.lineup_title{
+      text-align: center;
+      font-size: 22px;
+      margin: 0 0 30px;
+      letter-spacing: 5px;
+}
+/* =========================
+   경기정보
+========================= */
+.info_lineup{
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      font-size: 16px;
+}
+.info_lineup th,
+.info_lineup td{
+      border: 1px solid #000;
+      padding: 6px 8px;
+}
+.info_lineup th{
+      width: 15%;
+      background: #eee;
+      text-align: center;
+      font-weight: bold;
+}
+.info_lineup td{
+      width: 35%;
+}
+/* =========================
+   전체 래퍼
+========================= */
+.lineup-teams {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 30px;
+}
+/* =========================
+   실제 라인업 테이블
+========================= */
+.real_lineup,
+.real_lineup_Lg{
+       width: 50%;
+     /* border-collapse: collapse; */
+      font-size: 14px;
+}
+.real_lineup th,
+.real_lineup_Lg th{
+       padding: 8px 8px;
+      text-align: center;
+}
+.real_lineup td,
+.real_lineup_Lg td{
+      /* border: 1px solid #000; */
+      padding: 8px 6px;
+      text-align: center;
+       white-space: nowrap; 
+}
+.real_lineup tr,
+.real_lineup_Lg tr{
+      text-align: center;
+      white-space: nowrap; 
+}
+/* 헤더 */
+.real_lineup thead th,
+.real_lineup_Lg thead th{
+      /* background: #f0f0f0; */
+      font-weight: bold;
+}
+/* 로고 셀 */
+.real_lineup thead th:first-child{
+      width: 60px;
+}
+/* 컬럼 너비 */
+.real_lineup td:nth-child(1),
+thead th td:nth-child(1){
+      width: 60px; /* 타순*/
+      font-weight: bold;
+}
+.real_lineup td:nth-child(2),
+.real_lineup_Lg td:nth-child(2){
+      width: 90px;      /* 포지션*/
+      text-transform: uppercase;
+}
+.real_lineup td:nth-child(3),
+.real_lineup_Lg td:nth-child(3){
+      width: 160px;     /* 선수명*/
+      font-weight: bold;
+}
+.real_lineup td:nth-child(4),
+.real_lineup_Lg td:nth-child(4){
+      width: 90px;
+}
+/* =========================
+   우타만 배경 넣었음
+========================= */
+/*삼성*/
+.real_lineup tbody tr:nth-child(7){
+      background: gray;
+}
+.real_lineup tbody tr:nth-child(8){
+      background: gray;
+}
+.real_lineup tbody tr:nth-child(9){
+      background: gray;
+}
+
+/*엘지*/
+.real_lineup_Lg  tbody tr:nth-child(3){
+      background: gray;
+}
+.real_lineup_Lg  tbody tr:nth-child(5){
+      background: gray;
+}
+.real_lineup_Lg  tbody tr:nth-child(7){
+      background: gray;
 }
