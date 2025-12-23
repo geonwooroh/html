@@ -79,7 +79,7 @@ header {
     }
     .top_menu_item{
       display: flex;
-      gap: 40px;
+      gap: 50px;
       margin-top: 10px;
     }
     .top_menu a {
